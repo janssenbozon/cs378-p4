@@ -24,14 +24,14 @@ export default function Homepage() {
           }  
         });
       } else if (!user) {
-        navigate("/")
+        navigate("/cs378-p4")
       }
     }); 
   }, []);
 
   const handleSignOut = () => {
     signOut(auth).then(() => {
-      navigate("/")
+      navigate("/cs378-p4")
     }).catch((err) => {
       alert(err.message);
     })
